@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+   db:
+     image: mysql:latest
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: hugesecret
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: test
+       MYSQL_PASSWORD: secret
+
+   wordpress:
+     depends_on:
+       - db
+     image: wordpress:latest
+     ports:
+       - "8000:80"
+     restart: on-failure
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: test
+       WORDPRESS_DB_PASSWORD: secret

@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  python:
+     image: python-docker
+   js:
+     image: js-docker
