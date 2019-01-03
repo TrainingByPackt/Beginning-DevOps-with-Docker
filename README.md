@@ -18,7 +18,7 @@ Docker is a leading software container platform. Using containers, Docker guaran
 * Run a web application in Docker
 * Impact of Docker in DevOps
 * Deploy applications within a container
-* Understand Docker files-Run a web app in Docke
+* Understand Docker files-Run a web app in Docker
 
 
 ### Hardware requirements
